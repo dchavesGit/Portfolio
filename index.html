@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dario Chaves's portfolio">
+  <title>Dario Chaves | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio">Dario Chaves</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#sobre-mi">About Me</a></li>
+          <li><a href="#aptitudes">Skills</a></li>
+          <li><a href="#estudios">Education</a></li>
+          <li><a href="#proyectos">Projects</a></li>
+          <li><a href="#contacto">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <p class="hero-hello">Hello, I'm</p>
+        <h1>Dario Chaves</h1>
+        <p class="hero-role">IT Support (Service Desk L1.5) | Junior Developer and QA in training | C# · .NET · SQL | 10+ Years in Technical and Customer Support</p>
+        <ul class="hero-info">
+          <li>32 Years</li>
+          <li>Argentina</li>
+          <li>Available for new challenges</li>
+        </ul>
+        <a class="btn" href="#contacto">Let's talk!</a>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h2>About me</h2>
+        <div class="about">
+          <p>I am a support professional with 10+ years of experience helping users solve problems, from on-site IT support to remote Service Desk Level 1.5 supporting Edenor. Over the years I've handled remote and on-site support, Active Directory, workstation and network setups, hardware repair and IT stock control.</p>
+          <p>Now I'm taking the next step into software: I'm studying a University Technical Degree in Programming at UTN. I started with structured programming in C++ and now work with C# (.NET Framework 4.8), object-oriented programming, SQL, REST APIs and JSON, on top of earlier training in JavaScript, Node.js and MongoDB. I'm aiming for a Junior Developer, QA/Tester or Analyst role.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="aptitudes" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="chips">
+          <li><img src="htmlImg.png" alt="HTML" title="HTML"></li>
+          <li><img src="cssImg.webp" alt="CSS" title="CSS"></li>
+          <li><img src="javascript.png" alt="JavaScript" title="JavaScript"></li>
+          <li><img src="cSharp.webp" alt="C#" title="C#"></li>
+          <li><img src="c%2B%2BImg.png" alt="C++" title="C++"></li>
+          <li><img src="GitHubImg.png" alt="GitHub" title="GitHub"></li>
+          <li><img src="JiraImg.webp" alt="Jira" title="Jira"></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="estudios" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <ol class="timeline">
+          <li>
+            <article>
+              <h3>University Technical Degree in Programming</h3>
+              <p class="meta">UTN (Universidad Tecnológica Nacional), 2025 to present</p>
+              <p>10 subjects completed, roughly half of the degree. I started with structured programming in C++ and now work with C# and .NET, covering object-oriented programming and connecting apps to the internet through REST APIs and JSON.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>MERN Stack Course(Backend)</h3>
+              <p class="meta">Coderhouse</p>
+              <p>Backend development with the MERN stack: Node.js, Express and MongoDB.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <ul class="cards" id="lista-proyectos">
+          <li>
+            <article class="card">
+              <h3>E-commerce: Group Workshop </h3>
+              <p>An e-commerce application with inventory management, built with WinForms, C# and .NET Framework 4.8, implementing CRUD operations.</p>
+              <a href="https://github.com/kevn-gonzalez/Tp-winform-equipo-X" target="_blank" rel="noopener">View project</a>
+            </article>
+          </li>
+        </ul>
+
+        <form class="form form-card" id="form-proyecto">
+          <h3>Add a project</h3>
+          <div class="field">
+            <label for="proy-titulo">Title</label>
+            <input id="proy-titulo" name="titulo" type="text" required maxlength="60">
+          </div>
+          <div class="field">
+            <label for="proy-desc">Description</label>
+            <textarea id="proy-desc" name="descripcion" rows="3" required maxlength="200"></textarea>
+          </div>
+          <div class="field">
+            <label for="proy-link">Link (optional)</label>
+            <input id="proy-link" name="link" type="url" placeholder="https://github.com/...">
+          </div>
+          <button class="btn" type="submit">Add project</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container contact">
+        <div class="contact-col">
+          <h2>Social media</h2>
+          <ul class="socials">
+  <li>
+    <a href="https://github.com/dchavesGit" target="_blank" rel="noopener" aria-label="GitHub">
+      <img src="GitHubImg.png" alt="GitHub">
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/dariochaves" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <img src="LinkedinImg.jpg" alt="LinkedIn">
+    </a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+      <img src="InstagramImg.avif" alt="Instagram">
+    </a>
+  </li>
+</ul>
+        </div>
+
+        <div class="contact-col">
+          <h2>Contact me</h2>
+          <form class="form" id="form-contacto">
+            <div class="field">
+              <label for="contacto-mail">Your email</label>
+              <input id="contacto-mail" name="email" type="email" required placeholder="name@email.com">
+            </div>
+            <div class="field">
+              <label for="contacto-msg">Message</label>
+              <textarea id="contacto-msg" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button class="btn" type="submit">Send message</button>
+            <p class="form-status" id="estado-contacto" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Dario Chaves</p>
+    </div>
+  </footer>
+
+</body>
+</html>
